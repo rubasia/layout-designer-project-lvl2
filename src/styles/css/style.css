@@ -1,7 +1,48 @@
-/** CSS STYLE **/
-
-.hello {
-  display: block;
-
-  color: #fff;
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Regular.ttf");
 }
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url("../../fonts/Roboto-Bold.ttf");
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #cacaca;
+  background-color: #08020d;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 60px;
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

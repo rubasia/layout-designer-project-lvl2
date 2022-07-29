@@ -1,18 +1,68 @@
-@function rem($value) {
-  $result: ($value / $rem-base) * 1rem;
+$basic-size: 18px;
+$black: #08020d;
+$dark: #3c3b3d;
+$dark-gray: #cacaca;
+$gray: #e0e0e0;
+$red: #95390c;
+$purple: #5328a1;
+$orange: #f89202;
+$green: #34c176;
 
-  @return #{$result};
+$text-color: $dark-gray;
+$background-color: $black;
+
+$breakpoint: 480px;
+
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url('../../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url('../../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url('../../fonts/Roboto-Bold.ttf');
+}
+
+@mixin media {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: $basic-size;
+  line-height: 1.5;
+  color: $text-color;
+  background-color: $background-color;
 }
 
 h1,
-.h1 {
-  font-size: rem(30px);
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
-  @include media("md") {
-    font-size: rem(45px);
+h1 {
+  font-size: 60px;
+
+  @include media {
+    font-size: 30px;
   }
+}
 
-  @include media("lg") {
-    font-size: rem(60px);
+h2 {
+  font-size: 38px;
+
+  @include media {
+    font-size: 18px;
   }
 }
