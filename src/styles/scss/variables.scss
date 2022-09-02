@@ -1,0 +1,26 @@
+$basic-size: 18px;
+$black: #08020d;
+$dark: #3c3b3d;
+$dark-gray: #cacaca;
+$gray: #e0e0e0;
+$red: #95390c;
+$purple: #5328a1;
+$orange: #f89202;
+$green: #34c176;
+
+$text-color: $dark-gray;
+$background-color: $black;
+
+$breakpoint: 1240px;
+
+$font-sizes: (
+  "11": 11px,
+  "12": 12px,
+  "12_8": 12.8px,
+  "13_3": 13.3px,
+  "14": 14px,
+  "16": 16px,
+  "24": 24px,
+  "32": 32px,
+  "64": 64px,
+)

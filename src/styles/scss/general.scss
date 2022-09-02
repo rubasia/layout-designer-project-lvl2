@@ -1,0 +1,106 @@
+@import "variables.scss";
+
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url('../../fonts/Roboto-Regular.ttf');
+}
+  
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url('../../fonts/Roboto-Medium.ttf');
+}
+  
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  src: url('../../fonts/Roboto-Bold.ttf');
+}
+  
+@mixin media {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin font-size {
+  @each $size-name, $size in $font-sizes {
+    &-#{$size-name} {
+      font-size: $size;
+    }
+  }
+}
+
+.fs {
+  @include font-size;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+h1 {
+  font-size: 60px;
+
+  @include media {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+
+  @include media {
+    font-size: 18px;
+  }
+}
+
+body {
+  position: absolute;
+  margin: 0;
+
+  font-family: Roboto, sans-serif;
+  font-size: $basic-size;
+  line-height: 1.5;
+
+  color: $text-color;
+  background-color: $background-color;
+
+  header,
+  main section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 120px;
+
+    @media (max-width: $breakpoint) {
+      padding: 0 20px;
+    }
+  }
+}
+
+p,
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+@mixin all-caps {
+  text-transform: uppercase;
+}
+
+.sr-only {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+}
