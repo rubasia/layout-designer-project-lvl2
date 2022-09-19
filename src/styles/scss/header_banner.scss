@@ -102,12 +102,6 @@ header {
 
   #page-description {
     margin: auto;
-  
-    h1,
-    h2
-    {
-      text-align: center;
-    }
   }
 
   form {
@@ -120,7 +114,7 @@ header {
       gap: 24px;
       justify-content: space-between;
 
-      @media (max-width: $breakpoint) {
+      @media (max-width: calc($breakpoint / 2)) {
         flex-direction: column;
         gap: 0px;
       }

@@ -9,6 +9,105 @@
     <link rel="stylesheet" href="styles/css/style.css">
 </head>
 <body>
-
+  <header>
+      <nav class="fs-11">
+        <div class="logo" class="fs-11">
+          <img src="images/logo.svg" alt="logo">
+          <p>Music box</p>
+        </div>
+        <ul>
+          <li>Главная</li>
+          <li>Каталог</li>
+          <li>Исполнители</li>
+          <li>Контакты</li>
+        </ul>
+      </nav>
+      <input type="search" placeholder="Поиск..." class="fs-13_3">
+    </header>
+    <main>
+      <section id="hero">
+        <div id="page-description">
+          <h1>Онлайн музыка где угодно</h1>
+          <h2>без ограничений</h2>
+        </div>
+        <p>Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+        <form>
+          <div class="form-fields">
+            <input type="text" id="name" placeholder="Имя">
+            <label for="name" class="sr-only">Имя</label>
+            <input type="email" id="email" placeholder="Email">
+            <label for="email" class="sr-only">Email</label>
+          </div>
+          <button type="submit" class="fs-13_3">Получить доступ</button>
+        </form>
+      </section>
+      <section id="page-pricing">
+        <h2>Формы подписки</h2>
+        <div class="pricing-cards">
+          <div class="pricing-item bg-free">
+            <h3>Бесплатная</h3>
+            <div class="price">
+              <p class="pricing-value fs-64">0</p>
+              <p class="fs-32">руб.</p>
+            </div>
+            <a href="#" class="btn fs-16">Оформить</a>
+            <p class="pricing-footer fs-12_8">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+          </div>
+          <div class="pricing-item bg-standard">
+            <h3>Стандартная</h3>
+            <div class="price">
+              <p class="pricing-value fs-64">250</p>
+              <p class="fs-32">руб.</p>
+            </div>
+            <a href="#" class="btn fs-16">Оформить</a>
+            <p class="pricing-footer fs-12_8">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+          </div>
+          <div class="pricing-item bg-premium">
+            <h3>Премиум</h3>
+            <div class="price">
+              <p class="pricing-value fs-64">500</p>
+              <p class="fs-32">руб.</p>
+            </div>
+            <a href="#" class="btn fs-16">Оформить</a>
+            <p class="pricing-footer fs-12_8">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+          </div>
+        </div>
+        <p class="fs-16">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+      </section>
+      <section id="page-news">
+        <h2>Последние новости</h2>
+        <div class="news-item">
+          <img class="news-pic" src="../src/images/Music to Be Murdered By.png" alt="Singer photo">
+          <div class="news-body">
+            <h3>Music to Be Murdered By</h3>
+            <p class="fs-16">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+            <div class="news-footer">
+              <div class="news-author">
+                <img src="../src/images/avatar.png" alt="avater">
+                <p class="fs-12_8">Music box</p>
+                <p class="fs-12_8">17/01/2020</p>
+              </div>
+              <a href="#" class="btn fs-12_8">К альбому</a>
+            </div>
+          </div>
+        </div>
+        <div class="news-item">
+          <img class="news-pic" src="../src/images/Ordinary Man.png" alt="Singer photo">
+          <div class="news-body">
+            <h3>Ordinary Man</h3>
+            <p class="fs-16">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+            <div class="news-footer">
+              <div class="news-author">
+                <img src="../src/images/avatar.png" alt="avater">
+                <p class="fs-12_8">Music box</p>
+                <p class="fs-12_8">24/02/2020</p>
+              </div>
+            <a href="#" class="btn fs-12_8">К альбому</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
