@@ -381,4 +381,36 @@ header input:hover {
   }
 }
 
+#page-app h2 {
+  margin-bottom: 48px;
+}
+#page-app h2 + div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+@media (min-width: 1240px) {
+  #page-app h2 + div {
+    flex-direction: row;
+  }
+  #page-app h2 + div div {
+    width: 50%;
+  }
+}
+#page-app p {
+  margin-top: 16px;
+}
+#page-app img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page-app .btn {
+  border-radius: 32px;
+  padding: 16px 40px;
+  margin-top: 16px;
+  border: none;
+  background-color: #95390C;
+  text-transform: none;
+}
+
 /*# sourceMappingURL=style.css.map */

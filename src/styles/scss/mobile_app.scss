@@ -1,0 +1,40 @@
+@import "variables.scss";
+
+#page-app {
+
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  h2 + div {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media (min-width: $breakpoint) {
+      flex-direction: row;
+
+      div {
+        width: 50%;
+      }
+    }
+  }
+  
+  p {
+    margin-top: 16px;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    border-radius: 32px;
+    padding: 16px 40px;
+    margin-top: 16px;
+    border: none;
+    background-color: #95390C;
+    text-transform: none;
+  }
+}
